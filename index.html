@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Docker for Data Science</title>
+
+		<link rel="stylesheet" href="reveal.js/dist/reset.css">
+		<link rel="stylesheet" href="reveal.js/dist/reveal.css">
+		<link rel="stylesheet" href="css/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+                    <h2 class="r-fit-text" >Docker Intro for Data Science</h2>
+                    <p>Paola Arce</p>
+                    <div class="r-hstack">
+						<img class="plain" src="img/docker-logo.png" style="padding: 1.00em; margin: 0.2em; height: 200px;">
+					</div>
+                </section>
+				<section data-markdown>
+                    <textarea data-template>
+                        # Contents
+                        - Docker Quick Intro
+                        - Containers vs Virtual Machines
+                        - Using Docker in a Data Science project
+                    </textarea>
+                </section>
+                <section>
+                    <h2>Why Docker?</h2>
+                    <p>Infrastructure is as important as the code</p>
+                    <img class="plain" src="img/container.jpeg" style="padding: 1.00em; margin: 0.2em; height: 400px;">
+                </section>
+                <section>
+                    <h2>What is Docker?</h2>
+                    <p><a href="https:/www.docker.com/">Docker</a> is an open platform for developing, shipping, and running applications.</p>
+                    <ul>
+                        <li class="fragment">Code runs in an isolated environment (container)</li>
+                        <li class="fragment">Reduces the time of moving your code to a different machine</li>
+                    </ul>
+                </section>
+				<section>
+					<h2>Images and Containers</h2>
+
+				</section>
+				<section>
+					<h2>Public registries</h2>
+				</section>
+				<!-- <section data-background-iframe="https://hub.docker.com/" data-src data-background-interactive>
+				</section> -->
+				<section>
+					<h2>Containers vs Virtual Machines</h2>
+					<img class="plain" src="img/containervsVM.png" style="padding: 1.00em; margin: 0.2em; height: 600px;">
+				</section>
+			</div>
+		</div>
+
+		<script src="reveal.js/dist/reveal.js"></script>
+		<script src="reveal.js/plugin/notes/notes.js"></script>
+		<script src="reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="reveal.js/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
